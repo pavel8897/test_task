@@ -1,0 +1,129 @@
+.container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	max-width: 1400px;
+	margin: 0 auto;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+
+table {
+	border-collapse: collapse;
+	box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+	border-radius: 1em;
+	width: 800px;
+}
+
+table tr td {
+	border: 1px solid #808080;
+	padding: 10px;
+}
+
+.mainTitle {
+	font-weight: bold;
+	font-size: 24px;
+	margin-bottom: 20px;
+	display: block;
+}
+
+.tabs {
+	display: flex;
+	flex-direction: column;
+	user-select: none;
+	width: 140px;
+	margin: 0 40px 0 20px;
+}
+
+.tabs span:first-child {
+	border-top: none;
+}
+
+.tabs span {
+	cursor: pointer;
+	padding-bottom: 10px;
+	border-top: 1px solid #808080;
+	padding-top: 10px;
+	color: #ff704f;
+	font-weight: bold;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+}
+
+.tabs span img {
+	width: 30px;
+	margin-right: 10px;
+}
+
+.tabs .show {
+	display: block;
+}
+
+.contents span {
+	display: none;
+}
+
+.rightMenu {
+	width: 170px;
+	margin: 0 20px 0 40px;
+}
+
+.rightMenu p {
+	border-top: 1px solid #808080;
+	padding-top: 5px;
+}
+
+.notation, .spisok {
+	padding: 0;
+}
+
+.notation li {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.imgs {
+	text-align: left;
+}
+
+.spisok {
+	display: none;		
+}
+
+ul li {
+	list-style-type: none;
+	margin-bottom: 5px;
+}
+
+ul li a {
+	text-decoration: none;		
+	color: #000;
+}
+
+.domens p span {
+	color: #7580f2;
+}
+
+.domens div a {
+	color: #000;
+	text-decoration: none;
+	margin-left: 20px;
+}
+
+.domens div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.domens div:after {
+	background: url('close.png') no-repeat;
+	content: '';
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-size: 100%;
+	margin-right: 10px;
+	cursor: pointer;
+}
